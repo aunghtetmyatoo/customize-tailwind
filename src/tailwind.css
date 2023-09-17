@@ -1,0 +1,35 @@
+@config "../tailwind.config.js";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@layer base {
+  body {
+    @apply relative bg-[#F8FAFC] font-sans;
+  }
+}
+
+.card {
+  @apply flex flex-col bg-white shadow-lg rounded-lg max-w-md;
+}
+
+.card .card-body,
+.card .card-footer {
+  @apply p-6;
+}
+
+.typography {
+  @apply leading-relaxed;
+}
+
+.gradient-button {
+  @apply bg-gradient-to-l from-black to-blue-800 hover:from-blue-500 hover:to-black text-white text-xs font-semibold rounded-lg py-1.5 px-4;
+}
+
+.normal-button {
+  @apply bg-[#212121] hover:shadow-lg text-white rounded-lg py-1.5 px-4 text-xs font-semibold;
+}
