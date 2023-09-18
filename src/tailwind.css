@@ -14,7 +14,7 @@
 }
 
 .card {
-  @apply flex flex-col bg-white shadow-lg rounded-lg max-w-md;
+  @apply flex flex-col max-w-md bg-white rounded-lg shadow-lg;
 }
 
 .card .card-body,
@@ -32,4 +32,25 @@
 
 .normal-button {
   @apply bg-[#212121] hover:shadow-lg text-white rounded-lg py-1.5 px-4 text-xs font-semibold;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  @apply flex flex-col bg-[#0F1318] w-72 text-white p-4;
+}
+
+.sidebar .sidebar-header {
+  @apply px-2 py-4 text-2xl border-b border-solid border-[#252E3B];
+}
+
+.sidebar .nav {
+  @apply h-screen py-4 text-[#576678];
+}
+
+.sidebar .nav .nav-item {
+  @apply box-border p-2 rounded-lg hover:bg-[#1E232D] hover:text-white hover:cursor-pointer;
+}
+
+.sidebar .nav .sub-nav-item {
+  @apply p-2 pl-5 border-l border-[#252E3B] ml-5 hover:cursor-pointer hover:text-white;
 }
